@@ -1,7 +1,8 @@
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Form() {
+    const navigate = useNavigate();
     const [form, setForm] = useState({
         firstName: "",
         lastName: ""
@@ -9,6 +10,7 @@ export default function Form() {
 
     const submitHandler = (e) => {
         e.preventDefault();
+        navigate(`/hello/${form.firstName}/${form.lastName}`);
     }
     return (
         <div>
