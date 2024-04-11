@@ -1,14 +1,18 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 export default function Form() {
     const [form, setForm] = useState({
         firstName: "",
         lastName: ""
     });
+
+    const submitHandler = (e) => {
+        e.preventDefault();
+    }
     return (
         <div>
-            <form>
+            <form onSubmit={submitHandler}>
                 <div>
                     <label>First Name</label>
                     <input type="text"
@@ -21,6 +25,7 @@ export default function Form() {
                         onChange={(e) => setForm({ ...form, lastName: e.target.value })}
                         value={form.lastName} />
                 </div>
+                <button>Submit</button>
             </form>
         </div>
     )
