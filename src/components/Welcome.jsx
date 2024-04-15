@@ -5,6 +5,7 @@ export default function Welcome() {
     console.log(useParams())
     return(
         <div>
+            <Link to={'/'}>Home</Link>
             <h1>Hello {fName} {lName} </h1>
         </div>
     )
