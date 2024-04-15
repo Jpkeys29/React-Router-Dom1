@@ -13,7 +13,7 @@ export default function Form() {
         navigate(`/hello/${form.firstName}/${form.lastName}`);
     }
     return (
-        <div>
+        <div className='form'>
             <form onSubmit={submitHandler}>
                 <div>
                     <label>First Name</label>
