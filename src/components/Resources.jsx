@@ -8,7 +8,7 @@ const libraries = ['places']
 export default function Resources() {
     const position = { lat: 41.3874, lng: 2.1686 }
     return (
-        <APIProvider apiKey={"AIzaSyCUJR3_A9ZMaEw8sTXPNL8WTKt8I-Im-N8"}>
+        <APIProvider apiKey={""}>
             <div style={{height:"100vh", width: "100%"}}>
                 <Map
                 defaultZoom={9}
