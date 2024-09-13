@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div>
       <header className='header'>
-        <h1>Introduction to Statistics</h1>
+        <h1>Hommie</h1>
       </header>
         <Routes>
           <Route index element={<Home />} />

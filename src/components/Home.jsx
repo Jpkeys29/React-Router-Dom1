@@ -6,9 +6,9 @@ export default function Home() {
     return (
         <div className='home' >
                 <ul>
-                    <li><Link to={'/topics'}>Topics</Link></li>
-                    <li><Link to={'/practice'}>Practice</Link></li>
-                    <li><Link to={'/resources'}>Resources</Link></li>
+                    <li><Link to={'/topics'}>Rent a room</Link></li>
+                    <li><Link to={'/practice'}>Find a room</Link></li>
+                    <li><Link to={'/resources'}>Profile</Link></li>
                 </ul>
             <h1>Home</h1>
             <Form />
