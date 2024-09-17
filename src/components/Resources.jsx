@@ -7,7 +7,7 @@ function MyMap() {
     const inputref = useRef(null);
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: import.meta.env.REACT_APP_GOOGLEMAPS_API_KEY,
+        googleMapsApiKey: import.meta.env.VITE_GOOGLEMAPS_API_KEY,
         libraries
     })
     console.log(isLoaded)
