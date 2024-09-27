@@ -7,7 +7,6 @@ import Welcome from "./components/Welcome"
 import Resources from "./components/Resources"
 import "./index.css"
 import { Link, useParams } from "react-router-dom"
-import SearchResults from "./components/SearchResults"
 
 export default function App() {
   return (
@@ -21,7 +20,6 @@ export default function App() {
         <Route path="/topics" element={<Topics />} />
         <Route path="/practice" element={<ChatTrial />} />
         <Route path="/resources" element={<Resources />} />
-        <Route path="/search" element={<SearchResults />} />
         <Route path="/hello/:fName/:lName" element={<Welcome />} />
       </Routes>
     </div>
